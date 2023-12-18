@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        .cont {
+            margin-top: 5%;
+            margin-left: 5%;
+
+        }
+
+        .row {
+            display: flex;
+            line-height: 1.5;
+            padding: 7px 0 8px 0;
+        }
+
+        label {
+            flex: 0 0 auto;
+            width: 16.66666667%;
+            font-size: 20px;
+        }
+
+        input {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont"><h2>SIGN IN</h2>
+    </div>
+    <div class="cont">
+        <form>
+
+            <div class="row">
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" name="email" placeholder="johnWdoe.com" id="email" required />
+                </div>
+            </div>
+            <div class="row">
+                <label for="password">Password:</label>
+                <div>
+                    <input type="password" name="password" placeholder="********" id="password" required min=8 />
+                </div>
+            </div>         
+
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>

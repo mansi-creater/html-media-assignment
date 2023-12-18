@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        .cont {
+            margin-top: 5%;
+            margin-left: 5%;
+
+        }
+
+        .row {
+            display: flex;
+            line-height: 1.5;
+            padding: 7px 0 8px 0;
+        }
+
+        label {
+            flex: 0 0 auto;
+            width: 16.66666667%;
+            font-size: 20px;
+        }
+
+        input {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <form>
+            <div class="row">
+                <label for="firstName">First Name:</label>
+                <div>
+                    <input type="text" name="firstName" placeholder="John" id="firstName" required minlength=3 max=20 />
+                </div>
+            </div>
+            <div class="row">
+                <label for="lastName">Last Name:</label>
+                <div>
+                    <input type="text" name="lastName" placeholder="Doe" id="lastName" required min=3 max=20 />
+                </div>
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" name="email" placeholder="johnWdoe.com" id="email" required />
+                </div>
+            </div>
+            <div class="row">
+                <label for="password">Password:</label>
+                <div>
+                    <input type="password" name="password" placeholder="********" id="password" required min=8 />
+                </div>
+            </div>
+            <div class="row">
+                <label for="confirmPassword">Confirm Password:</label>
+                <div>
+                    <input type="password" name="confirmPassword" placeholder="********" id="confirmPassword"
+                        required />
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Gender:</label>
+                <div>
+                    <input type="radio" id="male" value="male" name="gender" checked />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" value="other" name="gender" />
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="terms">Terms and conditions:</label>
+                <div>
+                    <input type="checkbox" id="terms" required /> agree to terms and conditions
+                </div>
+            </div>
+
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
