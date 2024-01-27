@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+    <div id="form">
+        <h1>Form with various input elements</h1>
+        <form>    
+            <div class="row">
+                <div class="column">
+                    <label for="firstName">First Name:</label>
+                </div>
+                <div class="column">
+                    <input type="text" name="firstName" class="firstName" placeholder="John" id="firstName" required minlength=3 max=20 />
+                </div>                
+            </div>   
+
+            <div class="row">
+                <div class="column">
+                    <label for="lastName">Last Name:</label>
+                </div>
+                <div class="column">
+                    <input type="text" name="lastName" class="lastName" placeholder="Doe" id="lastName" required min=3 max=20 />
+                </div>                
+            </div>   
+
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="column">
+                    <input type="email" name="email" class="email" placeholder="john@doe.com" id="email" required />
+                </div>                
+            </div>            
+           
+            <div class="row">
+                <div class="column">
+                    <label for="age">Age:</label>
+                </div>
+                <div class="column">
+                    <input type="number" name="age" class="age" placeholder="38" id="age" required min=0 max=150 />
+                </div>                
+            </div>  
+
+            <div class="row">
+                <div class="column">
+                    <label for="">Gender:</label>
+                </div>
+                <div class="column">
+                    <input type="radio" id="male" value="male" name="gender" checked />
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" value="female" name="gender" />
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" value="other" name="gender" />
+                    <label for="other">Other</label>
+                </div>                
+            </div>  
+
+            <div class="row">
+                <div class="column">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="column">
+                    <input type="password" name="password" class="password" placeholder="********" id="password" required min=8 />
+                </div>                
+            </div>  
+
+            <div class="row">
+                <div class="column">
+                    <label for="confirmPassword">Confirm Password:</label>
+                </div>
+                <div class="column">
+                    <input type="password" name="confirmPassword" class="confirmPassword" placeholder="********" id="confirmPassword" required />
+                </div>                
+            </div>  
+
+            <div class="row" style="width: 100%;">
+                <div class="column">
+                    <input type="checkbox" id="terms" required class="checkbox" /> I agree to terms and  conditions
+                </div>                
+            </div>           
+            
+            <div class="row">
+                <button type="submit">Register</button>              
+            </div>               
+                       
+        </form>
+    </div>
+    
+</body>
+
+</html>

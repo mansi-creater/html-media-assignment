@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <!-- Internal styles -->
+    <style>
+        .internal {
+            color: green;
+        }
+
+        .inline__internal {
+            color: red;
+        }
+
+        .internal__ext {
+            color: brown;
+        }
+
+        .inline__internal__external {
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- In this line In-line CSS will render-->
+    <div style="color: rgb(212, 43, 136);">Inline</div> 
+    <div class="internal">Internal</div>
+    <div class="external">External</div>
+
+    <!-- In this line In-line CSS will render-->
+    <div style="color: rgb(50, 5, 90);" class="inline__internal">Inline + Internal</div>
+    
+    <div class="int__external internal__ext">Internal + External</div>
+
+    <!-- In this line In-line CSS will render-->
+    <div style="color: rgb(41, 19, 61);" class="inline__internal__external">Inline + Internal + External</div>
+</body>
+
+</html>

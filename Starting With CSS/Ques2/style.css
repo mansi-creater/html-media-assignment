@@ -1,0 +1,28 @@
+.my__heading {
+color: red;
+}
+             
+.my__heading2 {
+color: blue;
+}
+
+.my__title {
+color: green;
+}
+
+.my__description {
+color: brown;
+}
+
+.btn {
+background-color: #54fa54;
+}
+
+.my__btn-primary {
+background-color: purple;
+color: wheat;
+}
+
+.my__btn-secondary {
+background-color: pink;
+}

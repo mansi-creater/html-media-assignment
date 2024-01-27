@@ -1,0 +1,11 @@
+.external {
+    color: rgb(102, 102, 155);  
+  }
+    
+  .int__external {  
+    color: rgb(191, 211, 377);  
+  }  
+  
+  .inline__internal__external {  
+    color: rgb(199, 178, 152);  
+  }
