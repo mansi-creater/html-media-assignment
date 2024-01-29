@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+  }
+  
+  .box-1 {
+    position: relative;
+    z-index: 1; 
+    background: red;
+    border: 2px solid black;
+    width: 40%;
+    height: 100px;
+    margin: 30px;
+  }
+  
+  .box-2 {
+    position: absolute;
+    z-index: 3; 
+    background: lightgray;
+    border: 2px solid black;
+    height: 100px;  
+    width: 70%;
+    left: 100px;
+    top: 70px;
+  }
+  
+  .box-3 {
+    position: absolute;
+    z-index: 2; 
+    background: lightgreen;
+    border: 2px solid black;
+    width: 35%;
+    left: 270px;
+    top: -15px;
+    height: 100px;
+  }
